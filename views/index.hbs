@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{!-- <link rel="stylesheet" href="globals.css" /> --}}
+    <link rel="stylesheet" href="../public/css/style.css" />
+    <style>
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,600,800");
+
+.dashboard {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.dashboard .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  border: 1px solid;
+  border-color: #000000;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.dashboard .overlap {
+  position: absolute;
+  width: 1250px;
+  height: 1684px;
+  top: -520px;
+  left: -728px;
+}
+
+.dashboard .rectangle {
+  position: absolute;
+  width: 1248px;
+  height: 1684px;
+  top: 0;
+  left: 0;
+  background-color: #071e50;
+  box-shadow: 50px 0px 25px #00000040;
+}
+
+.dashboard .dashboard-button {
+  position: absolute;
+  width: 522px;
+  height: 72px;
+  top: 804px;
+  left: 728px;
+}
+
+.dashboard .overlap-group {
+  position: relative;
+  width: 520px;
+  height: 72px;
+  background-image: url(./img/rectangle-5.svg);
+  background-size: 100% 100%;
+}
+
+.dashboard .text-wrapper {
+  position: absolute;
+  height: 45px;
+  top: 13px;
+  left: 174px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 800;
+  background-color: #071e50;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashboard .dashboard-button-2 {
+  position: absolute;
+  width: 522px;
+  height: 165px;
+  top: 826px;
+  left: 728px;
+}
+
+.dashboard .overlap-2 {
+  position: absolute;
+  width: 520px;
+  height: 72px;
+  top: 93px;
+  left: 0;
+  background-image: url(./img/rectangle-5.svg);
+  background-size: 100% 100%;
+}
+
+.dashboard .text-wrapper-2 {
+  position: absolute;
+  height: 45px;
+  top: 13px;
+  left: 174px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  background-color: #071e50;
+  color: #ffffff;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.dashboard .img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 22px;
+  left: 142px;
+}
+
+.dashboard .fi-rr-book-alt {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 142px;
+}
+
+.dashboard .overlap-wrapper {
+  position: absolute;
+  width: 522px;
+  height: 72px;
+  top: 1034px;
+  left: 728px;
+}
+
+.dashboard .overlap-group-wrapper {
+  position: absolute;
+  width: 522px;
+  height: 72px;
+  top: 1149px;
+  left: 728px;
+}
+
+.dashboard .fi-rr-bookmark {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  left: 142px;
+}
+
+.dashboard .dashboard-button-wrapper {
+  position: absolute;
+  width: 520px;
+  height: 72px;
+  top: 1264px;
+  left: 728px;
+  background-image: url(./img/rectangle-5.svg);
+  background-size: 100% 100%;
+}
+
+.dashboard .div-wrapper {
+  width: 522px;
+  height: 72px;
+}
+
+.dashboard .fi-rr-envelope {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  left: 143px;
+}
+
+.dashboard .dashboard-button-3 {
+  position: absolute;
+  width: 522px;
+  height: 72px;
+  top: 1379px;
+  left: 728px;
+}
+
+.dashboard .logochhota {
+  position: absolute;
+  width: 400px;
+  height: 163px;
+  top: 559px;
+  left: 788px;
+  object-fit: cover;
+}
+
+.dashboard .overlap-3 {
+  position: absolute;
+  width: 1052px;
+  height: 254px;
+  top: 71px;
+  left: 581px;
+}
+
+.dashboard .rectangle-2 {
+  position: absolute;
+  width: 933px;
+  height: 158px;
+  top: 96px;
+  left: 2px;
+  background-color: #ffffff;
+  border: 3px solid;
+  border-color: #000000;
+  box-shadow: 0px 10px 4px #00000040;
+}
+
+.dashboard .news-updates-teacher {
+  position: absolute;
+  width: 1052px;
+  height: 249px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;padding: 50px;
+}
+
+.dashboard .span {
+  font-weight: 800;
+  color: #000000;
+}
+
+.dashboard .text-wrapper-3 {
+  font-weight: 700;
+  color: #071e50;
+  font-size: 30px;
+}
+
+.dashboard .overlap-4 {
+  position: absolute;
+  width: 935px;
+  height: 253px;
+  top: 397px;
+  left: 581px;
+}
+
+.dashboard .rectangle-3 {
+  position: absolute;
+  width: 933px;
+  height: 158px;
+  top: 95px;
+  left: 2px;
+  background-color: #ffffff;
+  border: 3px solid;
+  border-color: #000000;
+  box-shadow: 0px 10px 4px #00000040;
+}
+
+.dashboard .upcoming-events {
+  position: absolute;
+  width: 722px;
+  height: 249px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 10px;
+}
+
+.dashboard .text-wrapper-4 {
+  font-weight: 800;
+  color: #071e50;
+  font-size: 30px;
+}
+
+.dashboard .overlap-5 {
+  position: absolute;
+  width: 933px;
+  height: 250px;
+  top: 723px;
+  left: 578px;
+}
+
+.dashboard .rectangle-4 {
+  position: absolute;
+  width: 933px;
+  height: 158px;
+  top: 92px;
+  left: 0;
+  background-color: #ffffff;
+  border: 3px solid;
+  border-color: #000000;
+  box-shadow: 0px 10px 4px #00000040;
+}
+
+.dashboard .club-core-team {
+  position: absolute;
+  width: 620px;
+  height: 249px;
+  top: 0;
+  left: 3px;
+  font-family: "Poppins", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 36px;
+  letter-spacing: 0;
+  line-height: normal;padding: 10px;
+}
+button{
+  background-color: #071e50;
+}
+</style>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="div">
+        <div class="overlap">
+          <div class="rectangle"></div>
+          <div class="dashboard-button">
+            <div class="overlap-group"><button type="submit" class="text-wrapper">Dashboard</button></div>
+          </div>
+          <div class="dashboard-button-2">
+            <div class="overlap-2">
+             <form action="/clubdetails" method="post"><button type="submit" class="text-wrapper-2" id="clubdet">Club Details</button></form> 
+              <img class="img" src="img/fi-rr-search-alt.svg" />
+            </div>
+            <img class="fi-rr-book-alt" src="img/fi-rr-book-alt.svg" />
+          </div>
+          <div class="overlap-wrapper">
+            <div class="overlap-group">
+              <form action="/reviews" method="post"><button type="submit" class="text-wrapper-2" id="reviews">Reviews</button></form>
+              <img class="img" src="img/fi-rr-comment-alt.svg" />
+            </div>
+          </div>
+          <div class="overlap-group-wrapper">
+            <div class="overlap-group">
+              <form action="/newregistered" method="post"><button type="submit" class="text-wrapper-2" id="registered">Registered</button></form>
+              <img class="fi-rr-bookmark" src="img/fi-rr-bookmark.svg" />
+            </div>
+          </div>
+          <div class="dashboard-button-wrapper">
+            <div class="div-wrapper">
+              <div class="overlap-group">
+                <form action="/odupdation" method="post"><button type="submit" class="text-wrapper-2" id="odupdation">OD Updation</button></form>
+                <img class="fi-rr-envelope" src="img/fi-rr-envelope-marker.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="dashboard-button-3">
+            <div class="overlap-group">
+              <form action="/logout" method="post"><button type="submit" class="text-wrapper-2" id="logout">Log Out</button></form>
+              <img class="img" src="img/fi-rr-power-1.svg" />
+            </div>
+          </div>
+          <img class="logochhota" src="img/logochhota-1.png" />
+        </div>
+        <div class="overlap-3">
+          <div class="rectangle-2"></div>
+          <p class="news-updates-teacher">
+            <span class="span">News&nbsp;&nbsp;/ Updates :<br /></span>
+            <span class="text-wrapper-3"
+              >Teacher’s Day Celebration @ 05 Sept&nbsp;&nbsp;2:30 PM Onwards<br />Onam Festival Celebration @ 06
+              Sept&nbsp;&nbsp;Morning Onwards<br />Janmastmi Holiday On 07 Sept</span
+            >
+          </p>
+        </div>
+        <div class="overlap-4">
+          <div class="rectangle-3"></div>
+          <p class="upcoming-events">
+            <span class="span">Upcoming Events : <br /></span>
+            <span class="text-wrapper-4"><br /></span>
+            <span class="text-wrapper-3"
+              >Teacher’s Day Celebration @ 05 Sept <br />Onam Festival Celebration @ 06 Sept<br />E-Commerce Event @ 09
+              Sept</span
+            >
+          </p>
+        </div>
+        <div class="overlap-5">
+          <div class="rectangle-4"></div>
+          <p class="club-core-team">
+            <span class="span">Club Core Team Recruitment :<br /></span>
+            <span class="text-wrapper-4"><br /></span>
+            <span class="text-wrapper-3">E-Commerce Club<br />Blockchain Club<br />IOT Club</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    {{!-- <script>
+      var dash = document.querySelector("#dash") ;
+var club = document.querySelector("#clubdet") ;
+var od = document.querySelector("#odupdation") ;
+var reviews = document.querySelector("#reviews") ;
+var registered = document.querySelector("#registered") ;
+var logout = document.querySelector("#logout") ;
+
+// dash.addEventListener("click",function(){
+//     window.open("/Users/sanyam/Desktop/project review/Dashboard/dashboard.html") ;
+// })
+
+club.addEventListener("click",function(){
+    parent.location = '/Users/sanyam/Desktop/Thapa technical/mernbackend/views/clubdetails.hbs' ;
+})
+
+od.addEventListener("click",function(){
+   parent.location = '/Users/sanyam/Desktop/Thapa technical/mernbackend/views/odupdation.hbs' ;
+
+})
+
+reviews.addEventListener("click",function(){
+    parent.location = '/Users/sanyam/Desktop/Thapa technical/mernbackend/views/reviews.hbs';
+})
+
+registered.addEventListener("click",function(){
+    parent.location = '/Users/sanyam/Desktop/Thapa technical/mernbackend/views/newregistered.hbs' ;
+})
+logout.addEventListener("click",function(){
+   parent.location = '/Users/sanyam/Desktop/Thapa technical/mernbackend/views/login.hbs' ;
+})
+
+
+    </script> --}}
+  </body>
+</html>
